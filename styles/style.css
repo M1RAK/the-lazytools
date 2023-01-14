@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+:root {
+  /* Primary */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --primary-blue-bg:#0B345A;
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    2px 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+a {
+  text-decoration: none;
+}
+
+nav img {
+  width: 150px;
+  height: 100px;
+}
+
+body {
+  margin: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fira Code";
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--Grayish-Blue);
+  line-height: 1.5rem;
+}
+
+header {
+  text-align: center;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+}
+header h1 {
+  font-weight: 200;
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 1.25rem;
+}
+header h1 span {
+  font-weight: 700;
+}
+
+.card-container {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.card-container .card {
+  width: 350px;
+  height: 245px;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: var(--Very-Light-Gray);
+  box-shadow: var(--shadow-4);
+}
+.card-container .card .card-icon {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.center-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (max-width: 1060px) {
+  .card-container {
+    flex-direction: column;
+  }
+  header {
+    min-width: 390px;
+  }
+  .center-cards {
+    flex-direction: row;
+  }
+  .card {
+    width: auto;
+    height: 245px;
+  }
+}
+@media (max-width: 725px) {
+  .center-cards {
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    padding: 1rem;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
