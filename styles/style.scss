@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -48,7 +49,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Fira Code";
+    font-family: "Fira Code",monospace;
   }
   
 
@@ -80,11 +81,11 @@ header{
   max-width: 500px;
   margin-bottom: 1.5rem;
   h1{
-      font-weight: 200;
+      font-weight: 300;
       color: var(--Very-Dark-Blue);
       margin-bottom: 1.25rem;
       span{
-          font-weight: 700;
+          font-weight: 600;
       }
   }
 }

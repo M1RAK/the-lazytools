@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -43,7 +44,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Fira Code";
+  font-family: "Fira Code", monospace;
 }
 
 .container {
@@ -70,12 +71,12 @@ header {
   margin-bottom: 1.5rem;
 }
 header h1 {
-  font-weight: 200;
+  font-weight: 300;
   color: var(--Very-Dark-Blue);
   margin-bottom: 1.25rem;
 }
 header h1 span {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .card-container {
